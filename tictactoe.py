@@ -9,7 +9,6 @@ def check_pattern(start: int, end: int, count: int) -> int:
         else: 
             player_scores = 0
             bot_scores = 0
-    # print(scores)
     if player_scores == 3:
         print('\nPlayer won!')
         return player_scores
@@ -66,5 +65,6 @@ while is_running:
             elif check_pattern(3, 8, 2) == 3: break
     except ValueError:
         print('Please enter a number only.')
+
 
 input('Enter to quit')
